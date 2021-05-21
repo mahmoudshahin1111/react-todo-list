@@ -38,8 +38,14 @@ function App() {
   }
   return (
     <div className="App">
-      <TodoForm editTodo={todos[selectedTodoIndex]} onSubmit={(todo) => onSubmit(todo)} />
-      <Todos todos={todos} onEdit={(index) => onEdit(index)} onDelete={(index) => onDelete(index)} />
+      <TodoForm 
+        editTodo={todos[selectedTodoIndex]} 
+        onSubmit={(todo) => onSubmit(todo)} 
+      />
+      <Todos 
+        todos={todos} 
+        onEdit={(index) => onEdit(index)} 
+        onDelete={(index) => onDelete(index)} />
     </div>
   );
 }

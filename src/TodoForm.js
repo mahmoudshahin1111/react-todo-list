@@ -20,7 +20,10 @@ const TodoForm = ({ editTodo, onSubmit }) => {
     }, [editTodo]);
     return (
         <form  onSubmit={(event) => handleSubmit(event)}>
-            <input  name="name" value={todo} onChange={(e) => todoChangeHandler(e)} />
+            <input  
+            name="name" 
+            value={todo} 
+            onChange={(e) => todoChangeHandler(e)} />
             <button  type="submit" >Save</button>
         </form>
     );
