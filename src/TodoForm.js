@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-
+import "./TodoForm.css";
 
 
 const TodoForm = ({ editTodo, onSubmit }) => {
@@ -19,12 +19,13 @@ const TodoForm = ({ editTodo, onSubmit }) => {
         }
     }, [editTodo]);
     return (
-        <form  onSubmit={(event) => handleSubmit(event)}>
+        <form className="todo-form"  onSubmit={(event) => handleSubmit(event)}>
             <input  
+            className="name-input" 
             name="name" 
             value={todo} 
             onChange={(e) => todoChangeHandler(e)} />
-            <button  type="submit" >Save</button>
+            <button className="save-btn" type="submit" >Save</button>
         </form>
     );
 }

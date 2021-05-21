@@ -1,3 +1,5 @@
+import "./Todos.css";
+
 
 const Todos = ({ todos, onEdit, onDelete }) => {
     const handleEditClicked = (todoIndex) => {
@@ -7,13 +9,15 @@ const Todos = ({ todos, onEdit, onDelete }) => {
         onDelete(todoIndex);
     }
     return (
-        <ul>
+        <ul className="todos">
             {
                 todos.map((todo, index) => (
-                    <li key={index}>
-                        <p>{todo}</p>
-                        <button onClick={() => handleEditClicked(index)}>Edit</button>
-                        <button onClick={() => handleDeleteClicked(index)}>Delete</button>
+                    <li className="todo" key={index}>
+                        <p className="todo-content">{todo}</p>
+                        <div className="todo-controls">
+                        <button className="edit-btn" onClick={() => handleEditClicked(index)}>Edit</button>
+                        <button className="delete-btn" onClick={() => handleDeleteClicked(index)}>Delete</button>
+                        </div>
                     </li>
                 ))
 

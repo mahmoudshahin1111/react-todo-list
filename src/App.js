@@ -37,7 +37,8 @@ function App() {
     setTodos(filteredTodos);
   }
   return (
-    <div className="App">
+    <div className="app-container">
+      <div className="app-content">
       <TodoForm 
         editTodo={todos[selectedTodoIndex]} 
         onSubmit={(todo) => onSubmit(todo)} 
@@ -47,6 +48,7 @@ function App() {
         onEdit={(index) => onEdit(index)} 
         onDelete={(index) => onDelete(index)} 
         />
+      </div>
     </div>
   );
 }

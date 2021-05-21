@@ -1,0 +1,33 @@
+
+.todo-form{
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(4,1fr);
+    box-shadow: 0px 0px 10px -3px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 0px 10px -3px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 10px -3px rgba(0,0,0,0.75);
+padding: calc(1vw + 0.5rem);
+border-radius: 8px;
+}
+
+
+.name-input{
+
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+.save-btn{
+
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 5;
+    grid-column-end: 7;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    border: 2px solid rgb(151, 151, 151);
+    border-radius: 8px;
+}
