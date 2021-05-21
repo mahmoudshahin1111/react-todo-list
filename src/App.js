@@ -45,7 +45,8 @@ function App() {
       <Todos 
         todos={todos} 
         onEdit={(index) => onEdit(index)} 
-        onDelete={(index) => onDelete(index)} />
+        onDelete={(index) => onDelete(index)} 
+        />
     </div>
   );
 }

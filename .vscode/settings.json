@@ -1,5 +1,7 @@
 {
     "cSpell.words": [
         "Todos"
-    ]
+    ],
+    "javascript.validate.enable": false,
+    "problems.decorations.enabled": false
 }
